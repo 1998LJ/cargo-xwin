@@ -206,31 +206,15 @@ mod tests {
             ),
             (
                 &["cargo-xwin", "--locked", "xwin", "--color=always", "test"],
-                &[
-                    "cargo-xwin",
-                    "xwin",
-                    "test",
-                    "--locked",
-                    "--color=always",
-                ],
+                &["cargo-xwin", "xwin", "test", "--locked", "--color=always"],
             ),
             (
                 &["cargo-xwin", "test", "--color=always"],
                 &["cargo-xwin", "test", "--color=always"],
             ),
             (
-                &[
-                    "cargo-xwin",
-                    "--target",
-                    "x86_64-pc-windows-msvc",
-                    "build",
-                ],
-                &[
-                    "cargo-xwin",
-                    "--target",
-                    "x86_64-pc-windows-msvc",
-                    "build",
-                ],
+                &["cargo-xwin", "--target", "x86_64-pc-windows-msvc", "build"],
+                &["cargo-xwin", "--target", "x86_64-pc-windows-msvc", "build"],
             ),
         ];
 
